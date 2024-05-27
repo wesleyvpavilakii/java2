@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Metas de Vendas</title>
+    
+</head>
+<body>
+
+<h1>Calculadora de Metas de Vendas</h1>
+<form id="sales-form">
+    <div class="form-group">
+        <label for="valorVendido">Valor Vendido:</label>
+        <input type="number" id="valorVendido" name="valorVendido" required>
+    </div>
+    <div class="form-group">
+        <label for="meta">Meta:</label>
+        <input type="number" id="meta" name="meta" required>
+    </div>
+    <div class="form-group">
+        <label for="metaMinima">Meta Mínima:</label>
+        <input type="number" id="metaMinima" name="metaMinima" required>
+    </div>
+    <button type="button" onclick="calcularMetas()">Calcular</button>
+</form>
+
+<div id="resultado" class="result" style="display:none;">
+    <h2>Resultado</h2>
+    <p id="statusMeta"></p>
+    <p id="percentualMeta"></p>
+    <p id="percentualMetaMinima"></p>
+</div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
